@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:layout_weight="15"
+        android:orientation="horizontal"
+       >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/dilucion"
+            style="@style/textosCalculadora"
+            android:layout_weight="4.1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:id="@+id/dilucion"
+            style="@style/textosCalculadora"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:gravity="center"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:weightSum="10"
+    android:orientation="horizontal"
+        android:layout_weight="15"
+    >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/volumen"
+        style="@style/textosCalculadora"
+        android:layout_weight="4.1"
+        android:gravity="center"
+        />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:id="@+id/volumen"
+        style="@style/textosCalculadora"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:gravity="center"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="20"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/concentracionCelular"
+            style="@style/textosCalculadora"
+            android:layout_weight="4.1"
+            android:gravity="center"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            android:layout_weight="2"
+            android:id="@+id/concentracionCelular"
+            style="@style/textosCalculadora"
+            android:gravity="center"
+            android:hint="0"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/factor"
+            style="@style/textosCalculadora"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="15"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/cantidadCelulas"
+            style="@style/textosCalculadora"
+            android:layout_weight="4.1"
+            android:gravity="center"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:id="@+id/cantidadCelulas"
+            style="@style/textosCalculadora"
+            android:inputType="none"
+            android:hint="0"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/factor"
+            style="@style/textosCalculadora"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="15"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/viabilidad"
+            style="@style/textosCalculadora"
+            android:inputType="none|numberDecimal"
+            android:layout_weight="4.1"
+            android:gravity="center"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:id="@+id/viabilidad"
+            android:inputType="none"
+            style="@style/textosCalculadora"
+            android:hint="0"
+            android:gravity="center"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

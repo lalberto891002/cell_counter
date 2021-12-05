@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Cell Counter</string>
+    <string name="botonVivas">Alives</string>
+    <string name="botonMuertas">Deads</string>
+    <string name="cuadrantes">Quarter\n -----</string>
+    <string name="vivas">Alives</string>
+    <string name="muertas">Deads</string>
+    <string name="dilucion">Dilution: </string>
+    <string name="volumen">Volume(mL): </string>
+    <string name="concentracionCelular">Cell concentration(Cel/mL): </string>
+    <string name="concCel">Cell concentration</string>
+    <string name="cantidadCelulas">Number of cells: </string>
+    <string name="viabilidad">Viability(%): </string>
+    <string name="calcular">Compute</string>
+    <string name="densidadCelular">Cell Density:</string>
+    <string name="celulas_por_pozo">10^6 c/p</string>
+    <string name="celulasporml">10^6 c/ml</string>
+    <string name="numeroPlacas">Number of plates</string>
+    <string name="volumenCelulas">Cell Volume</string>
+    <string name="numeroPozos">Well Per Plate</string>
+    <string name="volumenMedio">Media Volume</string>
+    <string name="unidadesVolumenCelula">ml</string>
+    <string name="factor">10^6</string>
+    <string name="ajustar">Adjust Conc.</string>
+    <string name="concentracionDeseada">New concentration</string>
+    <string name="volumenAjuste">Adjust Volume</string>
+    <string name="resumen">Report</string>
+    <string name="viabil">Viability</string>
+    <string name="ConcentracnD">New concentration</string>
+    <string name="volumenA">Adjust volume</string>
+    <string name="guardar">Save</string>
+    <string name="si">Yes</string>
+    <string name="no">No</string>
+    <string name="generar">"Generate file?"</string>
+    <string name="conteoCel">Cell Counting</string>
+    <string name="sembrar">Seed plate</string>
+    <string name="nombre">Name</string>
+    <string name="fichero">file</string>
+    <string name="salir">Do you want to leave cell counter?</string>
+    <string name="aviso">Warning!</string>
+    <string name="aviso_perder">Data not saved will be lost</string>
+    <string name="cancelar">Cancel</string>
+    <string name="aceptar">Acept</string>
+    <string name="fiheroEn">Data saved with path and name: </string>
+    <string name="noFichero">File could not be created</string>
+    <string name="nodata">Invalid Data</string>
+
+     <string-array name="pozos_array">
+            <item>" "</item>
+            <item>6</item>
+            <item>12</item>
+            <item>24</item>
+            <item>48</item>
+            <item>96</item>
+        </string-array>
+</resources>

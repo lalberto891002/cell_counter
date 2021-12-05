@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="textoBotnes">40sp</dimen>
+    <dimen name="margin">12dp</dimen>
+    <dimen name="textosBotonesConteo">20sp</dimen>
+    <dimen name="textosCalculadora">15sp</dimen>
+    <dimen name="editTextCalculadora">10dp</dimen>
+    <dimen name="margenCalculadora">15dp</dimen>
+</resources>

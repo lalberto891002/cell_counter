@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/volumen"
+            style="@style/textosCalculadora"
+            android:layout_weight="4.5"
+            android:gravity="center_vertical"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:id="@+id/volumenResumen"
+            style="@style/textosCalculadora"
+            android:hint="0"
+            android:inputType="none"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="ml"
+            style="@style/textosCalculadora"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/concCel"
+            style="@style/textosCalculadora"
+            android:layout_weight="4.5"
+            android:gravity="center_vertical"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:id="@+id/concentracionResumen"
+            style="@style/textosCalculadora"
+            android:hint="0"
+            android:inputType="none"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="10^ 6c/ml"
+            style="@style/textosCalculadora"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:gravity="center_vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/viabil"
+            style="@style/textosCalculadora"
+            android:layout_weight="4.5"
+            android:gravity="center_vertical"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:id="@+id/viabilidadResumen"
+            style="@style/textosCalculadora"
+            android:inputType="none"
+            android:gravity="center"
+            android:text="0" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="%"
+            style="@style/textosCalculadora"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/numeroPlacas"
+            style="@style/textosCalculadora"
+            android:layout_weight="4.5"
+            android:gravity="center_vertical"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:id="@+id/nPlacasResumen"
+            style="@style/textosCalculadora"
+            android:inputType="none"
+            android:gravity="center"
+            android:text="0"
+            />
+
+        <TextView
+            android:layout_height="match_parent"
+            android:text="U"
+            style="@style/textosCalculadora"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:layout_width="0dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/densidadCelular"
+            style="@style/textosCalculadora"
+            android:layout_weight="4.5"
+            android:gravity="center_vertical"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:id="@+id/densidadCelularResumen"
+            style="@style/textosCalculadora"
+            android:inputType="none"
+            android:gravity="center"
+            android:text="0"
+            />
+
+        <TextView
+            android:layout_height="match_parent"
+            android:text="10^6c/p"
+            style="@style/textosCalculadora"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:layout_width="0dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/volumenCelulas"
+            style="@style/textosCalculadora"
+            android:layout_weight="4.5"
+            android:gravity="center_vertical"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:id="@+id/volumenCelulaResumen"
+            style="@style/textosCalculadora"
+            android:inputType="none"
+            android:gravity="center"
+            android:text="0"
+            />
+
+        <TextView
+            android:layout_height="match_parent"
+            android:text="ml"
+            style="@style/textosCalculadora"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:layout_width="0dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/ConcentracnD"
+            style="@style/textosCalculadora"
+            android:layout_weight="4.5"
+            android:gravity="center_vertical"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:id="@+id/concentracionDeseadaResumen"
+            style="@style/textosCalculadora"
+            android:inputType="none"
+            android:gravity="center"
+            android:text="0"
+            />
+
+        <TextView
+            android:layout_height="match_parent"
+            android:text="10^6c/ml"
+            style="@style/textosCalculadora"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:layout_width="0dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/volumenA"
+            style="@style/textosCalculadora"
+            android:layout_weight="4.5"
+            android:gravity="center_vertical"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:id="@+id/volumenAjusteResumen"
+            style="@style/textosCalculadora"
+            android:inputType="none"
+            android:gravity="center"
+            android:text="0"
+            />
+
+        <TextView
+            android:layout_height="match_parent"
+            android:text="ml"
+            style="@style/textosCalculadora"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:layout_width="0dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:weightSum="10">
+        <Space android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="2.5">
+        </Space>
+        <Button
+            android:text="@string/guardar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/guardar"
+            android:layout_weight="5"
+            style="@style/botonCalcular"
+            />
+
+        <Space android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="2.5">
+        </Space>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    <LinearLayout
+
+        android:layout_gravity="center"
+
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:background="@android:color/white"
+        android:alpha="0.9"
+        android:visibility="gone"
+        android:id="@+id/contenedorFicheroLocal"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/animar1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:text="@string/generar"
+                android:gravity="center"
+                android:background="@android:color/darker_gray"
+                android:textSize="@dimen/textosCalculadora"
+                android:elevation="10dp"
+
+                />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_weight="20"
+            android:gravity="center_vertical"
+            android:id="@+id/contenedorFichero"
+            android:background="@android:color/darker_gray"
+
+          >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@android:color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/nombre"
+                style="@style/textosCalculadora"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:id="@+id/animar2" />
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:id="@+id/nombreFichero"
+                style="@style/textosCalculadora"
+                android:hint="@string/fichero"
+                android:inputType="text"
+                android:gravity="center"
+                android:selectAllOnFocus="false" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@android:color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:weightSum="10"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/animar4">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@android:color/white"/>
+            <Button
+                android:text="@string/si"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/aceptar"
+                android:layout_weight="2.9"
+                style="@style/botonCalcular"
+
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                android:background="@android:color/darker_gray"/>
+
+            <Button
+                android:text="@string/no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/cancelar"
+                android:layout_weight="3"
+                style="@style/botonCalcular"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@android:color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
