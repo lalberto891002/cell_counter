@@ -44,5 +44,6 @@
     <string name="noFichero">No se pudo crear el fichero</string>
     <string name="nodata">Datos inválidos</string>
     <string name="numeroPozos">Pozos Por Placa</string>
+    <string name="noSuficeCells">No tienes suficientes celulas</string>
 
 </resources>

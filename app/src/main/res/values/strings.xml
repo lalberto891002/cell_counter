@@ -44,7 +44,7 @@
     <string name="fiheroEn">Data saved with path and name: </string>
     <string name="noFichero">File could not be created</string>
     <string name="nodata">Invalid Data</string>
-
+    <string name="noSuficeCells">You Dont have enoughs cells</string>
      <string-array name="pozos_array">
             <item>" "</item>
             <item>6</item>

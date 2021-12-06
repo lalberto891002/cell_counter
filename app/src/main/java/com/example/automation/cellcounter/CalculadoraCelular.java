@@ -150,7 +150,7 @@ public class CalculadoraCelular {
 
     public static double sembrar(double densidadCelular,int numeroPlacas,int numeroPozos,double concentracionInicial)
     {
-       return  (densidadCelular*numeroPozos*numeroPlacas)/concentracionInicial;
+        return  (densidadCelular*numeroPozos*numeroPlacas)/concentracionInicial;
 
     }
 
