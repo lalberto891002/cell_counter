@@ -60,6 +60,27 @@ public class SembrarPlacaActivity extends AppCompatActivity  implements AdapterV
                 return false;
             }
         });
+
+        nPlacas.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if(actionId== EditorInfo.IME_ACTION_DONE)
+                {
+                    InputMethodManager miteclado=(InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
+                    miteclado.hideSoftInputFromWindow(densidad.getWindowToken(),0);
+                    if(selectedWell == 0)
+                    {
+                        Toast.makeText(getApplicationContext(),getString(R.string.nodata),Toast.LENGTH_LONG).show();
+                        return false;
+                    }
+                    calcula(selectedWell);
+                    return true;
+
+                }
+
+                return false;
+            }
+        });
         nPozosSpinner.setOnItemSelectedListener(this);
     }
 
