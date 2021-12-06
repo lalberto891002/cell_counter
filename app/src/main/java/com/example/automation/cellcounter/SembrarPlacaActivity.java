@@ -67,11 +67,13 @@ public class SembrarPlacaActivity extends AppCompatActivity  implements AdapterV
     {
         double concenracion=0.0;
         double volumenCelular=0.0;
+        double volInicial = 0.0 ;
         CalculadoraCelular calculadora=null;
         double densidadCelular=0.0;
         int numeroPlacas=0;
         int numeroPozos=0;
         SharedPreferences preferences= PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        volInicial =Double.parseDouble(preferences.getString("volumen","0"));
         try {
              concenracion = Double.parseDouble(preferences.getString("concentracion", "0.0"));
         }
@@ -86,7 +88,6 @@ public class SembrarPlacaActivity extends AppCompatActivity  implements AdapterV
         }
         else
         {
-             calculadora=new CalculadoraCelular();
             try {
             densidadCelular = Double.parseDouble(densidad.getText().toString());
         }
@@ -105,15 +106,18 @@ public class SembrarPlacaActivity extends AppCompatActivity  implements AdapterV
             }
             numeroPozos = choice;
 
-            volumenCelular=calculadora.sembrar(densidadCelular,numeroPlacas,numeroPozos,concenracion);
-            //volumenCelular=Math.round(volumenCelular);
+            volumenCelular=CalculadoraCelular.sembrar(densidadCelular,numeroPlacas,numeroPozos,concenracion);
 
             String volc=String.format("%6.3f",volumenCelular);
             volumenCelulas.setText(volc);
-            double volumenDeMedio = calculadora.calcVolMedio(densidadCelular,numeroPlacas,numeroPozos,concenracion);
+            double volumenDeMedio = CalculadoraCelular.calcVolMedio(densidadCelular,numeroPlacas,numeroPozos,concenracion);
             volc=String.format("%6.3f",volumenDeMedio);
             volumenMedio.setText(volc);
-
+            if(volInicial < volumenCelular) {
+                Toast.makeText(this, getString(R.string.noSuficeCells), Toast.LENGTH_LONG).show();
+                volumenCelulas.setText("E!");
+                volumenMedio.setText("E!");
+            }
             SharedPreferences.Editor editor=preferences.edit();
             editor.putString("numero_placas",nPlacas.getText().toString());
 
@@ -137,6 +141,8 @@ public class SembrarPlacaActivity extends AppCompatActivity  implements AdapterV
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
+        if(i==0)
+            return;
        try {
            selectedWell = Integer.parseInt(adapterView.getItemAtPosition(i).toString());
        }catch (Exception e){
